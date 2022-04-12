@@ -1,0 +1,107 @@
+body {
+  box-sizing: border-box;
+}
+
+.response{
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: crimson;
+}
+p {
+  float: left;
+  width: 90%;
+  padding: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.row {
+  /* position: relative; */
+  left: 2%;
+  margin: auto;
+}
+#para1 {
+  background-color: rgb(98 220 232 / 88%);
+  font-size: 20px;
+  color: crimson;
+  width: 30%;
+  padding: 5px;
+  height: 160px;
+  border: 2px solid black;
+  /* margin-right: 10px;
+  margin-left: 10px; */
+}
+#para2 {
+  background-color: rgb(98 220 232 / 88%);
+  font-size: 20px;
+  color: rgb(247, 108, 98);
+  width: 30%;
+  padding: 5px;
+  height: 160px;
+  border: 2px solid rgb(234, 80, 80);
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+}
+#para3 {
+  background-color: rgb(98 220 232 / 88%);
+  font-size: 20px;
+  width: 30%;
+  padding: 5px;
+  height: 160px;
+  border: 2px solid black;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+}
+
+/* Desktop layout to apply responsive layout  */
+@media (min-width: 992px) {
+  p {
+    position: relative;
+    width: 40%;
+    padding: 5px;
+    ;
+  }
+}
+/* Tablet layout to apply responsive layout  */
+@media (min-width: 768px) and (max-width: 991px) {
+  #para3 {
+    position: relative;
+    margin: auto;
+    left: 7%;
+    width: 79%;
+  }
+  #para2 {
+    position: relative;
+    width: 40%;
+    left: 5%;
+  }
+  #para1 {
+    position: relative;
+    left: 5%;
+    width: 40%;
+  }
+}
+/* Mobile layout to apply responsive layout  */
+@media (max-width: 767px) {
+  #para1 {
+    width: 60%;
+    position: relative;
+    left: 15%;
+  }
+  #para2 {
+    width: 60%;
+    position: relative;
+    left: 15%;
+  }
+  #para3 {
+    width: 56%;
+    position: relative;
+    left: 17%;
+  }
+}
