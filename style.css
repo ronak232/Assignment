@@ -16,7 +16,7 @@ p {
   float: left;
   width: 90%;
   height: 150px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Times New Roman", Times, serif;
   margin-right: 12px;
   margin-left: 12px;
@@ -39,6 +39,7 @@ h2{
   display: inline-block;
   margin-right: 10px;
     margin-left: 10px;
+    height: 240px;
 }
 #row2 {
   width: 27%;
@@ -50,6 +51,7 @@ h2{
   display: inline-block;
   margin-right: 10px;
     margin-left: 10px;
+    height: 240px;
 }
 #row3 {
   width: 27%;
@@ -59,6 +61,7 @@ h2{
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
+  height: 240px;
 }
 #para1 {
   background-color: rgb(98 220 232 / 88%);
@@ -87,8 +90,23 @@ h2{
     border: 2px solid black;
 }
 
+.navbar-collapse #nav-list li a{
+   color: cyan;
+}
+
+
+
 /* Desktop layout to apply responsive layout  */
 @media (min-width: 992px) {
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 99%;
+}
+  ul.navbar-nav{
+    display: none;
+    text-align: center;
+    margin: 8px;
+  }
 
   #row1 {
     width: 30%;
@@ -123,13 +141,24 @@ h2{
   }
   p {
     position: relative;
+    font-size:14px;
     width: 60%;
     padding: 5px;
   }
 }
 /* Tablet layout to apply responsive layout  */
 @media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
   
+  ul.navbar-nav{
+    text-align: center;
+    margin: 8px;
+    font-size: 25px;
+    color:aqua;
+  }
   #row1{
     width: 43%;
     position: relative;
@@ -161,23 +190,39 @@ h2{
     margin-left: 10px;
   }
   #para3 {
-    position: relative;
+    position: absolute;
     left: 4%;
     width: 84%;
+    bottom: 2%;
   }
   #para2 {
     position: relative;
-    left: 1%;
-    width: 88%;
+    font-size:14px;
+    left: 0%;
+    width: 92%;
   }
   #para1 {
     position: relative;
-    left: 1%;
-    width: 88%;
+    font-size:14px;
+    left: 0%;
+    width: 92%;
   }
 }
 /* Mobile layout to apply responsive layout  */
 @media (max-width: 767px) {
+  .col-lg-3 {
+    /* flex: 0 0 auto; */
+    width: 100%;
+    margin-top: 8px;
+    height: 236px;
+  
+  }
+  
+  ul.navbar-nav{
+    text-align: center;
+    margin: 8px;
+    color: cornsilk;
+  }
 
   #row1 {
     width: 68%;
@@ -216,19 +261,25 @@ h2{
   #para1 {
     width: 84%;
     position: relative;
+    font-size:14px;
     left: 2%;
     margin-top: 21px;
+    top: -4%;
   }
   #para2 {
     width: 84%;
     position: relative;
+    font-size:14px;
     left: 2%;
     margin-top: 21px;
+    top: -4%;
   }
   #para3 {
     width: 84%;
     position: relative;
+    font-size:14px;
     left: 2%;
-    margin-top: 22px;
+    margin-top: 21px;
+    top: -4%;
   }
 }
