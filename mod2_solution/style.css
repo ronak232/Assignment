@@ -1,1 +1,302 @@
+body {
+  box-sizing: border-box;
+}
 
+.response {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 14px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+p {
+  float: left;
+  width: 90%;
+  height: 150px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+#row1 {
+  width: 27%;
+  /* height: 36vh; */
+  position: relative;
+  left: 6%;
+  margin: auto;
+  /* background-color: brown; */
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+#row2 {
+  width: 27%;
+  position: relative;
+  left: 4%;
+  margin: auto;
+  /* background-color: rgb(34, 212, 60); */
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom:20px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+#row3 {
+  width: 27%;
+  position: relative;
+  left: 4%;
+  /* background-color: brown; */
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+#para1 {
+  font-size: 20px;
+  color: rgb(20, 175, 241);
+  width: 90%;
+  padding: 5px;
+  height: 160px;
+  overflow-y: hidden;
+  position: absolute;
+  left: 3%;
+  top: 21%;
+}
+#para2 {
+  font-size: 20px;
+  color: rgb(28 29 215);
+  width: 90%;
+  padding: 5px;
+  height: 160px;
+  overflow-y: hidden;
+  position: absolute;
+  left: 3%;
+  top: 21%;
+}
+#para3 {
+  font-size: 20px;
+  color: rgb(79, 240, 138);
+  width: 90%;
+  padding: 5px;
+  height: 160px;
+  overflow-y: hidden;
+  position: absolute;
+  left: 3%;
+  top: 21%;
+}
+
+.navbar-collapse #nav-list li a {
+  color: cyan;
+  font-size: 30px;
+}
+
+
+/* Media Queries for different layout. */
+
+/* Desktop layout to apply responsive layout  */
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 99%;
+  }
+  ul.navbar-nav {
+    display: none;
+    text-align: center;
+    margin: 8px;
+  }
+
+  #row1 {
+    width: 90%;
+    /* height: 36vh; */
+    position: relative;
+    left: 4%;
+    margin: auto;
+    background-color: rgb(240, 34, 34);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #row2 {
+    width: 90%;
+    /* height: 36vh; */
+    position: relative;
+    left: 4%;
+    margin: auto;
+    background-color: brown;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #row3 {
+    width: 90%;
+    position: relative;
+    left: 4%;
+    background-color: rgb(211, 41, 197);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  p {
+    position: relative;
+    font-size: 14px;
+    width: 60%;
+    padding: 5px;
+  }
+}
+/* Tablet layout to apply responsive layout  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  ul.navbar-nav {
+    text-align: center;
+    margin: 8px;
+    font-size: 25px;
+    color: aqua;
+  }
+  #row1 {
+    width: 90%;
+    position: relative;
+    left: 6%;
+    margin: auto;
+    background-color: rgb(240, 34, 34);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #row2 {
+    width: 90%;
+    position: relative;
+    left: 6%;
+    margin: auto;
+    background-color: brown;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+
+  #row3 {
+    width: 90%;
+    position: relative;
+    left: 6%;
+    background-color: rgb(211, 41, 197);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #para3 {
+    position: absolute;
+    font-size: 14px;
+    left: 4%;
+    width: 84%;
+    bottom: 2%;
+  }
+  #para2 {
+    position: relative;
+    font-size: 14px;
+    left: 0%;
+    width: 92%;
+  }
+  #para1 {
+    position: relative;
+    font-size: 14px;
+    left: 0%;
+    width: 92%;
+  }
+}
+/* Mobile layout to apply responsive layout  */
+@media (max-width: 767px) {
+  .col-lg-3 {
+    /* flex: 0 0 auto; */
+    width: 100%;
+    margin-top: 8px;
+    height: 236px;
+  }
+
+  ul.navbar-nav {
+    text-align: center;
+    margin: 8px;
+    color: cornsilk;
+  }
+
+  #row1 {
+    width: 68%;
+    /* height: 36vh; */
+    position: relative;
+    left: 12%;
+    margin: auto;
+    background-color: rgb(240, 34, 34);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #row2 {
+    width: 68%;
+    /* height: 36vh; */
+    position: relative;
+    left: 12%;
+    margin: auto;
+    background-color: brown;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+  #row3 {
+    width: 68%;
+    /* height: 36vh; */
+    position: relative;
+    left: 12%;
+    margin: auto;
+    background-color: rgb(211, 41, 197);
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:20px;
+  }
+
+  #para1 {
+    width: 84%;
+    position: relative;
+    font-size: 14px;
+    left: 2%;
+    margin-top: 21px;
+    top: -4%;
+    height: 160px;
+  }
+  #para2 {
+    width: 84%;
+    position: relative;
+    font-size: 14px;
+    left: 2%;
+    margin-top: 21px;
+    top: -4%;
+    height: 160px;
+  }
+  #para3 {
+    width: 84%;
+    position: relative;
+    font-size: 14px;
+    left: 2%;
+    margin-top: 21px;
+    top: -4%;
+    height: 160px;
+  }
+}
